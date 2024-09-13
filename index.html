@@ -1,34 +1,6 @@
 <canvas id="ChartDemo" width="400" height="400"></canvas>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
 <script>
-    const chartData = [65, 59, 80, 81, 56, 55, 40, 20];
-    const ctx = document.getElementById("ChartDemo");
-    const chart = new Chart(ctx, {
-        type: 'line', // Specify the type of chart (line chart)
-        data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"], // X-axis labels
-            datasets: [{
-                label: "My First dataset", // Legend
-                fill: false, // Whether to fill the area between the line and the X-axis
-                backgroundColor: "rgba(75,192,192,0.4)", // Background color
-                borderColor: "rgba(75,192,192,1)", // Border color
-                pointBorderColor: "rgba(75,192,192,1)", // Point color
-                pointBorderWidth: 1, // Point size
-                pointHoverRadius: 5,
-                pointRadius: 1,
-                pointHoverBackgroundColor: "rgba(75,192,192,1)", // Point hover background color
-                pointHoverBorderColor: "rgba(220,220,220,1)", // Point hover border color
-                pointHoverBorderWidth: 2,
-                data: chartData, // Chart data
-            }]
-        },
-        options: {
-            // Additional options can be specified here
-        }
-    });
-</script><canvas id="ChartDemo" width="400" height="400"></canvas>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-<script>
     var data=[65, 59, 80, 81, 56, 55, 40,20]
     var ctx = document.getElementById("ChartDemo");
     var ChartDemo = new Chart(ctx, {
@@ -44,22 +16,16 @@
                 label: "My First dataset",
                 //折れ線グラフとX軸の間に色を描画するか否か
                 fill: false,
-                //背景色
-                backgroundColor: "rgba(75,192,192,0.4)",
-                //境界線の色
-                borderColor: "rgba(75,192,192,1)",
-                //点の色
-                pointBorderColor: "rgba(75,192,192,1)",
-                //点のサイズ
-                pointBorderWidth: 1,
+                backgroundColor: "rgba(75,192,192,0.4)", // Background color
+                borderColor: "rgba(75,192,192,1)", // Border color
+                pointBorderColor: "rgba(75,192,192,1)", // Point color
+                pointBorderWidth: 1, // Point size
                 pointHoverRadius: 5,
                 pointRadius: 1,
-                //点にマウスオーバーした時の設定
-                pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBackgroundColor: "rgba(75,192,192,1)", // Point hover background color
+                pointHoverBorderColor: "rgba(220,220,220,1)", // Point hover border color
                 pointHoverBorderWidth: 2,
-                //グラフの数値            
-                data: data,
+                data: chartData, // Chart data
             　}
         　]
         },
